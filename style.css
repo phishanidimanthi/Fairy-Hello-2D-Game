@@ -1,0 +1,355 @@
+body {
+    margin: 0;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: url("resources/BG3.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    overflow-x: hidden;
+    position: absolute;
+}
+
+
+.fairy {
+    height: 400px;
+    margin-top: 270px;
+    position: absolute;
+}
+
+.score {
+    font-size: 50px;
+    color: aquamarine;
+    margin-top: 20px;
+    margin-left: 40px;
+    position: absolute;
+    font-weight: bold;
+}
+
+
+
+.box1 {
+    width: 80px;
+    height: 130px;
+    background-image: url("resources/gif/gif1.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: 290px;
+}
+
+.box2 {
+    width: 80px;
+    height: 130px;
+    background-image: url("resources/gif/gif3.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: 410px;
+}
+
+.box3 {
+    width: 80px;
+    height: 130px;
+    background-image: url("resources/gif/gif5.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: 350px;
+}
+
+.box4 {
+    width: 80px;
+    height: 130px;
+    background-image: url("resources/gif/gif6.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: 290px;
+}
+
+.box5 {
+    width: 50px;
+    height: 110px;
+    background-image: url("resources/gif/attack1.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: 550px;
+}
+
+/* --------------- Start page --------------------- */
+.d1 {
+    width: 650px;
+    height: 400px;
+    margin-top: 290px;
+    animation-name: x;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes x {
+    0% {
+        margin-left: 20px;
+        margin-top: 100px;
+    }
+
+    50% {
+        margin-left: 80px;
+        margin-top: 100px;
+
+    }
+
+    100% {
+        margin-left: 20px;
+        margin-top: 100px;
+
+    }
+}
+
+.startBox {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+}
+
+.S1 {
+    font-size: 80px;
+    margin-top: 200px;
+    margin-left: 500px;
+    font-family: 'Blaka Hollow', cursive;
+    letter-spacing: 2px;
+    color: rgb(105, 80, 11);
+    text-shadow: 2px 2px 8px rgb(230, 230, 59);
+
+}
+
+.S2 {
+    margin-top: 460px;
+    margin-left: 510px;
+    position: absolute;
+    font-size: 50px;
+    font-family: 'Black Ops One', cursive;
+    text-shadow: 2px 2px 5px rgb(69, 89, 99);
+}
+
+.S2 a {
+    text-decoration: none;
+    color: rgb(251, 255, 0);
+}
+
+.S3 {
+    margin-top: 460px;
+    margin-left: 900px;
+    text-shadow: 2px 2px 3px rgb(171, 247, 222);
+    font-family: 'Black Ops One', cursive;
+    font-size: 50px;
+    position: absolute;
+    color: rgb(253, 4, 58);
+    cursor: pointer;
+}
+
+.op {
+    margin-left: 120px;
+    color: rgb(7, 245, 205);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.help {
+    width: 800px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 300px;
+    background-color: rgb(5, 44, 78);
+    box-shadow: 2px 2px 50px rgb(63, 127, 224);
+    visibility: hidden;
+    position: absolute;
+}
+
+        /* ---------------- Game Over ---------------- */
+.end {
+    width: 800px;
+    height: 600px;
+    margin-top: 20px;
+    margin-left: 300px;
+    background-color: transparent;
+    visibility: hidden;
+    position: absolute;
+}
+
+.gameOver {
+    font-size: 60px;
+    color: rgb(204, 0, 0);
+    text-shadow: 2px 2px 3px rgb(182, 94, 94);
+    font-family: 'Black Ops One', cursive;
+    margin-top: 30px;
+    margin-left: 240px;
+    position: absolute;
+
+    animation-name: p;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes p {
+    0% {
+        font-size: 60px;
+        letter-spacing: 0px;
+    }
+
+    50% {
+        font-size: 40px;
+        letter-spacing: 5px;
+        color: rgb(245, 52, 18);
+
+    }
+
+    100% {
+        font-size: 60px;
+    }
+}
+
+
+.fScore {
+    font-size: 50px;
+    color: rgb(255, 238, 0);
+    text-shadow: 2px 2px 3px rgb(243, 47, 47);
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    margin-top: 100px;
+    margin-left: 300px;
+    position: absolute;
+}
+
+.final {
+    font-size: 60px;
+    color: rgb(255, 145, 0);
+    text-shadow: 2px 2px 3px rgb(240, 79, 79);
+    font-family: 'Black Ops One', cursive;
+    margin-top: 200px;
+    margin-left: 380px;
+    position: absolute;
+}
+
+.Playbtn {
+    font-size: 40px;
+    background-color: rgb(243, 239, 23);
+    text-shadow: 2px 2px 3px rgb(243, 241, 114);
+    font-family: 'Black Ops One', cursive;
+    letter-spacing: 2px;
+    border: none;
+    margin-top: 450px;
+    margin-left: 270px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.Playbtn a {
+    text-decoration: none;
+    color: rgb(252, 16, 154);
+}
+
+.Playbtn a:hover {
+    background-color: rgb(252, 16, 154);
+    color: rgb(243, 239, 23);
+    transition: 2s;
+}
+
+.hT {
+    font-size: 60px;
+    margin-top: 50px;
+    margin-left: 250px;
+    font-family: 'Blaka Hollow', cursive;
+    letter-spacing: 2px;
+    color: rgb(105, 80, 11);
+    text-shadow: 2px 2px 8px rgb(255, 255, 1);
+}
+
+.hMenu {
+    list-style: none;
+    font-size: 20px;
+    color: rgb(31, 1, 1);
+    text-shadow: 1px 1px 3px rgb(223, 73, 73);
+    margin-left: 200px;
+    margin-top: 60px;
+    font-family: 'Black Ops One', cursive;
+    letter-spacing: 1px;
+}
+
+        /* --------------------- Levels ----------------------- */
+        
+.levels {
+    width: 800px;
+    height: 500px;
+    margin-top: 50px;
+    margin-left: 300px;
+    background-color: rgb(5, 44, 78);
+    box-shadow: 2px 2px 50px rgb(63, 127, 224);
+    visibility: visible;
+    position: absolute;
+}
+
+.LMenu {
+    list-style: none;
+    font-size: 25px;
+    color: rgb(241, 44, 44);
+    text-shadow: 1px 1px 2px rgb(231, 126, 126);
+    margin-left: 130px;
+    margin-top: 60px;
+    font-family: 'Black Ops One', cursive;
+    letter-spacing: 1px;
+}
+
+.LMenu a {
+    text-decoration: none;
+    color: rgb(241, 44, 44);
+}
+
+.hL {
+    font-size: 60px;
+    margin-top: 50px;
+    margin-left: 250px;
+    font-family: 'Blaka Hollow', cursive;
+    letter-spacing: 3px;
+    color: rgb(105, 80, 11);
+    text-shadow: 2px 2px 8px rgb(255, 255, 1);
+}
+
+.fairyLevel {
+    height: 400px;
+    margin-top: 270px;
+    position: absolute;
+    margin-left: 0px;
+}
+
+.d2 {
+    width: 650px;
+    height: 400px;
+    animation-name: n;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes n {
+    0% {
+        margin-bottom: 250px;
+        margin-top: 250px;
+    }
+
+    50% {
+        margin-bottom: 240px;
+        margin-top: 240px;
+
+    }
+
+    100% {
+        margin-bottom: 250px;
+        margin-top: 250px;
+    }
+}
